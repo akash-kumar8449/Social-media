@@ -20,7 +20,6 @@ app.use(cors({
   origin: [
     "http://localhost:5173", 
     "https://social-media-frontend-f4jc.vercel.app", 
-    "https://social-media-app-frontend-gilt-theta.vercel.app"
   ],
   credentials: true
 }))
