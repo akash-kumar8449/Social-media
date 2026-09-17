@@ -17,8 +17,8 @@ dotenv.config()
 const port = process.env.PORT || 5000
 
 app.use(cors({
-  // origin: "https://social-media-4a3f.onrender.com",
-  origin: "http://localhost:5173",
+  origin: "https://social-media-ehng.onrender.com",
+  // origin: "http://localhost:5173",
   credentials: true
 }))
 
