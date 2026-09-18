@@ -15,14 +15,9 @@ dotenv.config()
 
 
 const port = process.env.PORT || 5000
-const allowedOrigins = [
-  "http://localhost:5173",
-  "https://social-media-frontend-f4jc.vercel.app",
-  process.env.FRONTEND_URL,
-].filter(Boolean)
 
 app.use(cors({
-  origin: allowedOrigins,
+  origin: true,
   credentials: true
 }))
 

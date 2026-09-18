@@ -3,16 +3,12 @@ import express from "express"
 import { Server } from "socket.io"
 const app = express()
 const server = http.createServer(app)
-const allowedOrigins = [
-    "http://localhost:5173",
-    "https://social-media-frontend-f4jc.vercel.app",
-    process.env.FRONTEND_URL,
-].filter(Boolean)
 
 const io = new Server(server, {
     cors: {
-        origin: allowedOrigins,
-        methods: ["GET", "POST"]
+        origin: true,
+        methods: ["GET", "POST"],
+        credentials: true
     }
 })
 
